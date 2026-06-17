@@ -1,0 +1,19 @@
+id: urichat
+version: 1
+scheme: chat
+description: Deprecated chat bridge — map transcript to URI and forward to urisys RDP stack.
+uri_patterns:
+  - pattern: chat://local/message/command/send
+    kind: command
+    operation: chat.message.send
+    side_effects: true
+    approval: required
+  - pattern: chat://local/uri/command/execute
+    kind: command
+    operation: chat.uri.execute
+    side_effects: true
+    approval: required
+handlers:
+  python:
+    chat.message.send: python://urichat.handlers:message_send
+    chat.uri.execute: python://urichat.handlers:uri_execute
