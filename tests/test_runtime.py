@@ -1,5 +1,5 @@
 from urichat import register
-from urisysedge.runtime import Runtime
+from uri_control.edge.runtime import Runtime
 
 
 def test_chat_uri_execute_dry_run():
