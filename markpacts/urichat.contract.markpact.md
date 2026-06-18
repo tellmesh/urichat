@@ -7,7 +7,7 @@ apiVersion: urisys.io/v1
 kind: UriContract
 metadata:
   id: urichat.contract
-  version: 0.1.0
+  version: 1.0.0
 scheme: chat
 commands:
   - id: chat.message.send
