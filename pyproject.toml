@@ -11,7 +11,7 @@ requires-python = ">=3.10"
 license = "Apache-2.0"
 authors = [{ name = "urisys contributors" }]
 keywords = ["uri", "urisys", "urichat", "chat"]
-dependencies = ["uricore>=0.1.8"]
+dependencies = ["uricontrol>=0.1.8"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]
